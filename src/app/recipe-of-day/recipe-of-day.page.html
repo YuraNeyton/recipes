@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+            <ion-button (click)="navigate()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon name="share-social-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Рецепт Блюда</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img src="assets/img/avocado.jpg"></ion-img>
+    <div style="margin: 0 auto; text-align: center">
+        <ion-label color="success">
+            <h1 style="font-weight: bold">Авокадо</h1>
+        </ion-label>
+    </div>
+    <div style="text-align: center; background-color:#2dd36f; color: white">
+        212 ккал в 100граммах <br>
+        б2 | ж20 | у6
+    </div>
+    <ion-card style="padding: 10px">
+        <ion-card-header>
+            <ion-card-title>Опис</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            Авокадо є ефективним антиоксидантом, що захищає клітини від старіння, бере участь у процесах кровотворення,
+            цілюще впливає на діяльність шлунково-кишкового тракту. Продукт сприяє зниженню рівня холестерину в крові.
+            Авокадо нормалізує артеріальний тиск, особливо він корисний гіпертонікам.
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Інгредієнти</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item (click)="changeIcon()">
+                <ion-icon [name]="selected ? 'remove-circle-outline' :'checkmark-circle-outline'" slot="end"
+                          [color]="selected ? 'warning':'success'"></ion-icon>
+                <ion-label color="success">Авокадо 50г.</ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

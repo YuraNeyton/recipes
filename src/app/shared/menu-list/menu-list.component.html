@@ -1,0 +1,10 @@
+<div class="menu">
+  <div *ngFor="let item of menuItems" class="menu_item">
+    <div class="img">
+      <ion-img [src]="'assets/img/'+item.img"></ion-img>
+    </div>
+    <div class="title">
+      <h3>{{item.title}}</h3>
+    </div>
+  </div>
+</div>

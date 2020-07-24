@@ -1,0 +1,28 @@
+<ion-menu side="start" menuId="side_menu" contentId="main">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-title>Меню</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list style="padding-top: 0">
+      <ion-item color="success" *ngFor="let item of menuList" routerLink="cart">
+        <ion-icon [name]="item.icon" slot="end"></ion-icon>
+        <ion-label>{{item.title}}</ion-label>
+      </ion-item>
+
+      <ion-item color="success" >
+        <div>
+          <h1>Приєднуйтесь до нас!</h1>
+        </div>
+      </ion-item>
+      <ion-item color="success">
+        <div *ngFor="let social of socials" >
+          <div class="img">
+            <ion-img [src]="'assets/img/'+social.img"></ion-img>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

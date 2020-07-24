@@ -1,0 +1,35 @@
+.menu_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu_item {
+  //padding: 5px 5px 5px;
+  position: relative;
+}
+
+.img {
+  width: 205px;
+  height: 200px;
+  margin: 0;
+}
+
+ion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title{
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: #28ba62;
+  color: white;
+  width: 80%;
+  bottom: 83px;
+  left: 26px;
+  margin: 0 auto;
+  text-align: center;
+}

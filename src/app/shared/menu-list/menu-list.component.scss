@@ -1,0 +1,32 @@
+.menu {
+
+}
+
+.menu_item {
+  position: relative;
+  padding: 0 0 5px 0;
+}
+
+.title {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: #28ba62;
+  color: white;
+  width: 80%;
+  bottom: 83px;
+  left: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+.img {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+
+ion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
